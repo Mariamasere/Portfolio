@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <!-- Entete de la page -->
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dody-tertiary shadow-sm fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Mariama Séré Condé</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Liens de navigation -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'">
+                            <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#apropos">À propos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Projets
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#projets">Tous les projets</a></li>
+                                <li><a class="dropdown-item" href="#pr1">Projet1</a></li>
+                                <li><a class="dropdown-item" href="#pr2">Projet2</a></li>
+                                <li><a class="dropdown-item" href="#pr3">Projet3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#competences">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- Introduction -->
+    <section class="my-5">
+        <div id="accueil" class="container">
+            <!-- Carte de présentation -->
+            <div class="card mx-auto shadow" style="max-width: 600px;">
+                <img src="Photo.jpg" class="card-img-top rounded-circle mt-3 mx-auto d-block"
+                    alt="Avatar de Mariama Séré Condé" style="width:150px; height:150px; object-fit:cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Bonjour ! Je suis Mariama Séré Condé</h5>
+                    <p class="card-text">
+                        Étudiante en informatique passionnée par le développement de solutions
+                        innovantes et l'apprentissage continu.
+                    </p>
+                    <p class="card-text">Bienvenue sur ma page !</p>
+                    <a href="#apropos" class="btn btn-primary mt-2">En savoir plus sur moi</a>
+                </div>
+            </div>
+
+            <!-- À propos -->
+            <div id="apropos" class="mt-5">
+                <h3 class="text-center mb-3">A propos de moi</h3>
+                <p>
+                    Actuellement étudiante en informatique, je suis passionnée par la programmation et le développement
+                    de logiciels. J'aime relever des défis techniques et apprendre de nouvelles technologies pour créer
+                    des
+                    solutions efficaces.
+                </p>
+                <p>
+                    En dehors de mes études, j'aime lire des livres, voyager et
+                    explorer les dernières tendances.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Mes projets -->
+    <section>
+        <h3 id="projets">Projets</h3>
+
+        <!-- Projet 1 -->
+        <div class="mb-5">
+            <h4 id="pr1">1. Projet de Base de Données – Création et gestion d'une BD complète</h4>
+            <span class="badge bg-primary mb-2">Projet en équipe</span>
+
+            <!-- Carousel -->
+            <div id="carouselPr1" class="carousel slide mb-3">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPr1" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselPr1" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselPr1" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselPr1" data-bs-slide-to="3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/pr1/Screenshot 2025-11-15 032800.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pr1/Screenshot 2025-11-15 032512.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pr1/Screenshot 2025-11-15 032608.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pr1/Screenshot 2025-11-15 032649.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPr1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPr1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <p>Création complète d’une base de données à partir d’un fichier Excel fourni.</p>
+            <p>Travail effectué :</p>
+            <ul>
+                <li>Normalisation des données.</li>
+                <li>Conception du diagramme MCD.</li>
+                <li>Création des tables, vues, déclencheurs et procédures stockées.</li>
+                <li>Gestion des utilisateurs et des privilèges.</li>
+                <li>Sauvegarde de la base de données.</li>
+            </ul>
+
+            <div class="alert alert-success" role="alert">
+                Résultat : une base de données fonctionnelle, bien structurée et sécurisée,
+                conforme aux règles de modélisation.
+            </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div>
+            <h4 id="pr2">2. Projet Marketing – Élaboration d’un plan marketing</h4>
+            <span class="badge bg-primary mb-2">Projet en équipe</span>
+
+            <!-- Carousel -->
+            <div id="carouselPr2" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPr2" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselPr2" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselPr2" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/pr2/Screenshot 2025-11-15 033513.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pr2/Screenshot 2025-11-15 033548.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pr2/Screenshot 2025-11-15 033617.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPr2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPr2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <p>Réalisation d’un plan marketing pour un nouveau produit/service fictif.</p>
+            <p>Travail effectué :</p>
+            <ul>
+                <li>Analyse du marché et identification du public cible.</li>
+                <li>Définition du positionnement et des objectifs marketing.</li>
+                <li>Élaboration de la stratégie marketing : segmentation, mix (4P), communication.</li>
+                <li>Application concrète des concepts étudiés en cours.</li>
+                <li>Travail collaboratif et présentation finale en équipe.</li>
+            </ul>
+
+            <div class="alert alert-success" role="alert">
+                Résultat : un document structuré permettant de lancer efficacement le produit/service.
+            </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div>
+            <h4>3. Portfolio Web – Développement personnel</h4>
+            <span class="badge bg-primary mb-2">Projet individuel</span>
+
+            <!-- Carousel -->
+            <div id="carouselPr3" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPr3" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselPr3" data-bs-slide-to="1"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/pr3/Screenshot 2025-11-17 222159.png" class="d-block w-100" alt="Image 1 projet3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pr3/Screenshot 2025-11-17 222234.png" class="d-block w-100" alt="Image 2 projet3">
+                    </div>
+        
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPr3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPr3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <ul>
+                <li>Structure des pages et organisation des sections.</li>
+                <li>Intégration de carrousels, navigation fixe, mise en page responsive.</li>
+                <li>Gestion des fichiers et du code avec Git/GitHub.</li>
+                <li>Hébergement du site sur GitHub Pages.</li>
+            </ul>
+            <div class="alert alert-success" role="alert">
+                Résultat : un site web professionnel présentant mon parcours, mes compétences et mes projets.
+            </div>
+    </section>
+
+    <!-- Compétences techniques -->
+    <section>
+        <h3 id="competences">Compétences techniques</h3>
+
+        <!-- Languages de programmation -->
+        <div class="mb-4">
+            <h5>Languages de programmation</h5>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>C / C++</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>NASM</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 55%"></div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>Python</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 20%"></div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>MySQL</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 60%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Développement web -->
+        <div>
+            <h5>Développement web</h5>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>HTML5</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 50%"></div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>CSS3</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 45%"></div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>Bootstrap</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 15%"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Outils et environnements -->
+        <div>
+            <h5>Outils et environnements</h5>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>Visual Studio Code</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 95%"></div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>Git</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 50%"></div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>Linux</span>
+                <div class="progress" style="width: 70%;">
+                    <div class="progress-bar" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Réalisations et certifications -->
+    <section>
+        <h3>Réalisations et certifications</h3>
+
+        <div class="alert alert-primary" role="alert">
+            Travaux pratiques en C, C++ et assembleur, démontrant ma capacité à résoudre
+            des problèmes techniques.
+        </div>
+        <div class="alert alert-primary" role="alert">
+            Bonne compréhension de l’architecture des ordinateurs et du fonctionnement
+            interne des systèmes.
+        </div>
+        <div class="alert alert-primary" role="alert">
+            Traitement d’image en assembleur (NASM) : conversion en niveaux de gris avec instructions scalaires vs AVX2,
+            accompagnée d’une analyse de performance.
+        </div>
+        <div class="alert alert-success" role="alert">
+            Création et gestion d’une base de données complète, réalisée en équipe
+            à partir d’un fichier Excel.
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            Utilisation régulière d’outils de développement : Git, Visual Studio, Linux, VS Code.
+        </div>
+        <div class="alert alert-info" role="alert">
+            Suivi de formations en ligne pour améliorer continuellement mes compétences.
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-4">
+        <h3>Contact</h3>
+
+        <!-- Informations -->
+        <div class="mb-3">
+            <p><strong>Courriel : </strong><a href="mailto:sereconde321@gmail.com">sereconde321@gmail.com</a></p>
+            <p><strong>LinkedIn : </strong><a href="https://www.linkedin.com/in/mariama-séré-condé"
+                    target="_blank">Profil LinkedIn</a></p>
+            <p><strong>GitHub : </strong><a href="https://github.com/Mariamasere" target="_blank">Mariamasere</a></p>
+        </div>
+
+        <!-- Formulaire -->
+        <h5>M'envoyer un message</h5>
+
+        <form>
+            <div class="mb-3">
+                <label for="courriel" class="form-label">Courriel</label>
+                <input type="email" class="form-control" id="courriel" placeholder="nom@exemple.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Votre message</label>
+                <textarea class="form-control" id="message" rows="3"
+                    placeholder="Écrivez votre message ici..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" disabled>
+                <span>Envoyer</span>
+                <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+        </form>
+
+    </section>
+
+    <!-- Pieds de page -->
+    <footer class="mt-5 py-3 border-top">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Texte gauche -->
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0">© 2025 Mariama Séré Condé</p>
+                </div>
+
+                <!-- Liens droite -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.linkedin.com/in/mariama-séré-condé" target="_blank" class="me-3">LinkedIn</a>
+                    <a href="https://github.com/Mariamasere" target="_blank" class="me-3">GitHub</a>
+                    <a href="#" aria-label="Retour en haut"
+                        onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Haut</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Script personnalisé pour la fermeture de la barre de navigation -->
+    <script src="script.js"></script>
+</body>
+
+</html>
